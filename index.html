@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/bd426b3dc8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="nav">
+        
+        <div class="namcon">
+        <div class="nam">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="home">
+            Home
+        </div>
+        <div class="about">
+            About
+        </div><div class="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        
+    </div>
+    </div>
+   <div class="aboutfp">
+    <div class="bigt">
+        TRENDING SONGS !
+    </div><div class="smallt">"Sing for the Moment" is a song by American rapper Eminem from his 2002 album The Eminem Show</div>
+   </div>
+   <div class="mainmusic">
+    <a href="html2.html">
+        <img src="img/maxresdefault.jpg" alt="">
+    </a>
+   </div>
+   <a href="music.html" style="text-decoration: none;">
+   <div class="playcon">
+    <div class="play">Play</div>
+    </a>
+   </div>
+   </a>
+   <a href="html2.html"><div class="reco">
+    <div class="recos">
+        <a>
+            <img src="img/mb.jpg" alt="">
+        </a>
+
+        <a href="">
+            <img src="img/ct.jpeg" alt="">
+        </a>
+    
+        <a href="">
+            <img src="img/marry.jpg" alt="">
+        </a>
+    
+        <a href="">
+            <img src="img/ckay.jpg" alt="">
+        </a>
+    
+        <a href="">
+            <img src="img/tsu.jpg" alt="">
+        </a>
+   
+        <a href="">
+            <img src="img/bl.jpg" alt="">
+        </a>
+    
+        <a href="">
+            <img src="img/pd.jpeg" alt="">
+        </a>
+    
+        <a href="">
+            <img src="img/ib.jpg" alt="">
+        </a>
+    </div>
+   </div></a>
+   <script>
+    // Get all the images with class 'row__poster' and attach a click event listener
+    const images = document.querySelectorAll('.row__poster');
+    images.forEach(image => {
+        image.addEventListener('click', function() {
+            // Retrieve the source of the music from the image's alt attribute
+            const musicSrc = this.alt;
+
+            // Construct the URL for music.html with the selected song details as parameters
+            const url = `music.html?img=${encodeURIComponent(this.src)}&music=${encodeURIComponent(musicSrc)}`;
+
+            // Navigate to music.html
+            window.location.href = url;
+        });
+    });
+</script>
+</body>
+</html>

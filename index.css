@@ -1,0 +1,178 @@
+body {
+    background-image: url("img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    background-color: black;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+
+
+
+/* Common Styles */
+.namcon {
+    height: 50px;
+    width: 100px;
+    border-radius: 2px;
+}
+
+.nav {
+    background-color: #ffffff86;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.namcon .nam {
+    font-weight: bold;
+    color: rgb(207, 236, 38);
+    border: none;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: .1px;
+    font-family: montserrat;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.namcon .nam img {
+    height: 40px;
+    position: relative;
+    left: 8px;
+}
+
+.home {
+    color: white;
+    position: relative;
+    top: -30px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 80px;
+}
+
+.about {
+    color: white;
+    position: relative;
+    top: -48px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 150px;
+}
+
+.aboutfp {
+    height: 200px;
+    width: 800px;
+    position: relative;
+    top: 120px;
+    left: 20px;
+}
+
+.aboutfp .bigt {
+    font-size: 40px;
+    text-decoration: none;
+    -webkit-text-stroke-width: 1px;
+    color: #fff;
+    position: relative;
+    top: -100px;
+}
+
+.aboutfp .smallt {
+    width: 500px;
+    color: #efefef;
+    font-weight: 100;
+    position: relative;
+    top: -90px;
+}
+
+.mainmusic a img {
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    position: relative;
+    top: -50px;
+    left: 20px;
+    margin: 0;
+    transition: 0.4s;
+}
+
+.mainmusic a img:hover {
+    transform: scale(1.06);
+}
+
+.search {
+    background-color: hsla(0, 0%, 100%, 0.455);
+    height: 30px;
+    width: 150px;
+    display: flex;
+    border-radius: 20px;
+    position: absolute; /* Position absolute for easier positioning */
+    top: 10px; /* Adjust top spacing as needed */
+    right: 20px; /* Adjust right spacing as needed */
+}
+
+.search input {
+    flex: 1; /* Allow input to take remaining space */
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+}
+
+.search i {
+    margin-right: 10px; /* Add margin to the right of the search icon */
+    cursor: pointer;
+    margin-top: 5px; /* Adjust top spacing for icon */
+}
+
+.playcon {
+    background-color: rgb(238, 32, 145);
+    height: 40px;
+    width: 160px;
+    border-radius: 10px;
+    position: relative;
+    left: 20px;
+    top: -38px;
+}
+
+.playcon:hover {
+    box-shadow: 0px 0px 8px rgb(238, 32, 145);
+}
+
+.playcon .play {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    left: 50px;
+    cursor: pointer;
+}
+
+.recos {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.recos::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.reco {
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.recos a img {
+    height: 300px;
+    width: 200px;
+    transition: 0.4s;
+}
+
+.recos a img:hover {
+    transform: scale(1.04);
+}
+

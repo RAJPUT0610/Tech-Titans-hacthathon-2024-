@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="music.css">
+    <script src="https://kit.fontawesome.com/bd426b3dc8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <img src="why-sky-blue-2db86ae.jpg" alt="">
+    <div class="poster">  
+        <img src="metamorphosis.jpg">
+        <audio src="INTERWORLD_METAMORPHOSIS_NS9z2QHcZdY_140.mp3" id="music"></audio>
+        <input type="range" value="0" id="progress">
+    </div>
+     
+    <div class="control">
+        <div id="back"><i class="fa-solid fa-backward"></i></div>
+        <div onclick="papo()"><i class="fa-solid fa-play" id="papo"></i></div>
+        <div id="forw" onclick="forword()"><i class="fa-solid fa-forward"></i></div>
+    </div>
+        
+    <div id="volbutton">
+        <div id="vol"><i class="fa-solid fa-volume-high"></i></div>
+    </div>
+    <input type="range" id="volumeincrease">
+  
+
+<div class="search"> 
+    <input type="text" id="searchInput" placeholder="Search...">
+    <i class="fa-solid fa-magnifying-glass" onclick="searchSongs(); this.previousElementSibling.blur();"></i>
+</div>
+
+<script src="music.js"></script>
+<div class="mname"></div>
+
+</body>
+</html>
